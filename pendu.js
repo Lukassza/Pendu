@@ -93,7 +93,8 @@ jouer.addEventListener("click", function (e) {
 
 
 
-
+// motasecret => le mot choisi aléatoirement que l'utilisateur doit trouver
+//propal => lettre proposée par l'utilisateur
 //placemot => affichage du mot sur la page
-//placelettre => emplacement de la lettre proposée dans le mot
+//placelettre => tableau contenant les occurences de la lettre proposée retrouvées dans le mot
 // lettresentrées => liste des lettres déjà entrées
