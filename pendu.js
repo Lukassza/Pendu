@@ -76,7 +76,7 @@ jouer.addEventListener("click", function (e) {
             console.log(placemot)
         }
         mot.textContent=placemot
-
+        placelettre=[]
     dejalettre.textContent=`Lettres déjà entrées: ${lettresentrées}`
     tentative.textContent=`Nombre de tentatives restantes: ${tentativesrestantes}`
     if(placemot==motsecret)
