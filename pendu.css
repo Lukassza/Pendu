@@ -1,0 +1,62 @@
+body{background-color: rgb(185, 182, 182);
+margin:0%;
+padding:0%;
+}
+
+
+
+#jouer{position:absolute;
+    left:45%;
+    top:45%;
+width:10%;
+height:10%;}
+
+.mot{font-size:140%;}
+
+
+.proposition{display:flex}
+.liste{line-height:10%;}
+.lettres{width:3%;
+    height:10%;
+    }
+
+
+
+      input{
+        position:absolute;
+        left:-150%;
+      }
+      
+      label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border: 1px solid #ddd;
+        line-height: 50px;
+        cursor: pointer
+      }
+
+      input:checked + label{background-color:blue}
+.result{color:red;
+font-size: 150%;}
+      
+
+
+/* 
+    
+    input[type="checkbox"] + label {
+      display: inline-block;
+      padding: 10px;
+      cursor: pointer;
+      border: 1px solid black;
+      color: black;
+      background-color: white;
+      margin-bottom: 10px;
+    }
+    
+    input[type="checkbox"]:checked + label {
+      border: 1px solid white;
+      color: white;
+      background-color: black;
+    }  */
