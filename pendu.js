@@ -53,7 +53,6 @@ jouer.addEventListener("click", function (e) {
         if(tentativesrestantes>0){
         tentativesrestantes --
         let elem = evt.target;
-        console.log(elem.name)
         let propal=elem.name
         console.log(propal)
         lettresentrées.push(propal)

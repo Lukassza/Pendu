@@ -6,12 +6,10 @@ padding:0%;
 
 
 #jouer{position:absolute;
-    left:45%;
+    left:47%;
     top:45%;
 width:10%;
 height:10%;}
-
-.mot{font-size:140%;}
 
 
 .proposition{display:flex}
@@ -38,25 +36,32 @@ height:10%;}
       }
 
       input:checked + label{background-color:blue}
-.result{color:red;
+.result{position:absolute;
+    top:50%;
+    left:48.5%;
+    color:red;
 font-size: 150%;}
       
+.mot{position:absolute;
+left:47%;
+top:30%;
+font-size:140%;}
+
+.tentative{position:absolute;
+right:3%;}
+
+.lettresentrées{margin-top:1%;}
 
 
-/* 
-    
-    input[type="checkbox"] + label {
-      display: inline-block;
-      padding: 10px;
-      cursor: pointer;
-      border: 1px solid black;
-      color: black;
-      background-color: white;
-      margin-bottom: 10px;
-    }
-    
-    input[type="checkbox"]:checked + label {
-      border: 1px solid white;
-      color: white;
-      background-color: black;
-    }  */
+@media only screen and (min-width: 319px) and (max-width:780px) {
+
+
+#jouer{width:15%;}
+
+.mot{left:30%;}
+
+.result{top:42%;
+    left:40%;}
+
+
+}
