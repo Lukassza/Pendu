@@ -1,4 +1,5 @@
-body{background-color: rgb(185, 182, 182);
+body{background-color: rgb(0, 0, 0);
+    color:aliceblue;
 margin:0%;
 padding:0%;
 }
@@ -35,12 +36,18 @@ height:10%;}
       }
 
       input:checked + label{background-color:blue}
-      
+
 .result{position:absolute;
     top:50%;
     left:48.5%;
-    color:red;
-font-size: 150%;}
+    color:rgb(0, 0, 0);
+    background-color:rgba(255, 0, 0,0.7);
+    font-size: 150%;
+
+-webkit-box-shadow:0px 0px 34px 7px rgba(255,46,46,0.48);
+-moz-box-shadow: 0px 0px 34px 7px rgba(255,46,46,0.48);
+box-shadow: 0px 0px 34px 7px rgba(255,46,46,0.48);
+}
       
 .mot{position:absolute;
 left:47%;
