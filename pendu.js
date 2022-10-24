@@ -33,7 +33,7 @@ jouer.addEventListener("click", function (e) {
 
         let label = document.createElement("label");
         label.setAttribute("for", lettres.id);
-        label.textContent= alphabet[document.querySelectorAll(".proposition input").length-1]
+        label.textContent= alphabet[document.querySelectorAll(".proposition .lettres").length-1]
         proposition.appendChild(label);
     }
 
