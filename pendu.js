@@ -25,9 +25,10 @@ jouer.addEventListener("click", function (e) {
     for(i=0;i<26;i++){
     let lettres = document.createElement("input");
         lettres.setAttribute("type", "checkbox");
-        lettres.setAttribute("name", alphabet[document.querySelectorAll(".proposition input").length]);
-        lettres.id = "lettres" + document.querySelectorAll(".proposition input").length;
         lettres.classList.add("lettres");
+        lettres.setAttribute("name", alphabet[document.querySelectorAll(".proposition .lettres").length]);
+        lettres.id = "lettres" + document.querySelectorAll(".proposition .lettres").length;
+        
         proposition.appendChild(lettres);
 
         let label = document.createElement("label");
