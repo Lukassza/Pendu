@@ -21,8 +21,7 @@ height:10%;}
 
 
       input{
-        position:absolute;
-        left:-150%;
+        display:none;
       }
       
       label {
@@ -36,6 +35,7 @@ height:10%;}
       }
 
       input:checked + label{background-color:blue}
+      
 .result{position:absolute;
     top:50%;
     left:48.5%;

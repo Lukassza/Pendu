@@ -27,8 +27,7 @@ jouer.addEventListener("click", function (e) {
         lettres.setAttribute("type", "checkbox");
         lettres.classList.add("lettres");
         lettres.setAttribute("name", alphabet[document.querySelectorAll(".proposition .lettres").length]);
-        lettres.id = "lettres" + document.querySelectorAll(".proposition .lettres").length;
-        
+        lettres.id = alphabet[document.querySelectorAll(".proposition .lettres").length];
         proposition.appendChild(lettres);
 
         let label = document.createElement("label");
@@ -92,9 +91,9 @@ jouer.addEventListener("click", function (e) {
 })
 
 
-
-// motasecret => le mot choisi aléatoirement que l'utilisateur doit trouver
-//propal => lettre proposée par l'utilisateur
-//placemot => affichage du mot sur la page
-//placelettre => tableau contenant les occurences de la lettre proposée retrouvées dans le mot
+// ! //
+// motsecret => le mot choisi aléatoirement que l'utilisateur doit trouver
+// propal => lettre proposée par l'utilisateur
+// placemot => affichage du mot sur la page
+// placelettre => tableau contenant les occurences de la lettre proposée retrouvées dans le mot
 // lettresentrées => liste des lettres déjà entrées
