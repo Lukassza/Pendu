@@ -43,8 +43,8 @@ jouer.addEventListener("click", function (e) {
     console.log(motsecret)
 
     for(j=0;j<motsecret.length;j++){
-        placemot+="_ "
-        mot.textContent=placemot
+        placemot.push("_ ")
+        mot.textContent=placemot.join('')
     }
     
     
@@ -57,29 +57,32 @@ jouer.addEventListener("click", function (e) {
         console.log(propal)
         lettresentrées.push(propal)
     
-        // if(propal==="b"){
-        //     console.log("ça fonctionne")
-        // }
-        // else {console.log("non")}
 
         if (motsecret.includes(propal)){
             for(k=0;k<motsecret.length;k++){
                 if(motsecret[k]==propal)
                 placelettre.push(k)
-                console.log(placelettre)
+                
+                
                 
             }
+            console.log(placelettre)
+            tentativesrestantes++
         }
+        
         for(l=0;l<=placelettre.length;l++){
-            placemot[placelettre[l]]=propal
-            console.log(placemot)
+            let tempo =placelettre[l]
+            placemot[tempo]=propal
+            
+            
         }
-        mot.textContent=placemot
+        mot.textContent=placemot.join('')
         placelettre=[]
     dejalettre.textContent=`Lettres déjà entrées: ${lettresentrées}`
     tentative.textContent=`Nombre de tentatives restantes: ${tentativesrestantes}`
-    if(placemot==motsecret)
-    result2.textContent="Victoire"        
+    if(placemot.join('')==motsecret){
+        console.log("victoire")
+    result2.textContent="Victoire"}        
 }
         else{result.textContent="Défaite"}
     })
@@ -89,6 +92,14 @@ jouer.addEventListener("click", function (e) {
 
     
 })
+
+
+
+//! ACTUALISER LA PAGE //
+let actualiser = document.querySelector(".f5");
+actualiser.addEventListener("click", function () {
+  location.reload();
+});
 
 
 // ! //
