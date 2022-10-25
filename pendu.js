@@ -81,10 +81,11 @@ jouer.addEventListener("click", function (e) {
     dejalettre.textContent=`Lettres déjà entrées: ${lettresentrées}`
     tentative.textContent=`Nombre de tentatives restantes: ${tentativesrestantes}`
     if(placemot.join('')==motsecret){
-        console.log("victoire")
-    result2.textContent="Victoire"}        
+    result2.textContent="Victoire"
+    result2.style="box-shadow: 0px 0px 34px 7px rgba(67, 46, 255, 0.48)"  }      
 }
-        else{result.textContent="Défaite"}
+        else{result.textContent="Défaite"
+    result.style="box-shadow: 0px 0px 34px 7px rgba(255,46,46,0.48)"}
     })
 
   
