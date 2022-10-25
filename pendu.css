@@ -97,8 +97,15 @@ right:3%;}
 
 .mot{left:30%;}
 
-.result{top:42%;
+
+
+
+.result, .result2{width:25%;
+  top:42%;
     left:40%;}
-
-
+.tentative{position:absolute;
+  bottom:30%;}
+  
+  .lettresentrées{position:absolute;
+  bottom:40%;}
 }
