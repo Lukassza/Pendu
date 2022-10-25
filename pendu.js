@@ -108,7 +108,7 @@ jouer.addEventListener("click", function (e) {
         console.log(placelettre);
         tentativesrestantes++;
       }
-
+      
       for (l = 0; l <= placelettre.length; l++) {
         let tempo = placelettre[l];
         placemot[tempo] = propal;
@@ -120,12 +120,12 @@ jouer.addEventListener("click", function (e) {
       if (placemot.join("") == motsecret) {
         result2.textContent = "Victoire";
         result2.style = "box-shadow: 0px 0px 34px 7px rgba(67, 46, 255, 0.48)";
-        setTimeout(location.reload(), 5000);
+        //setTimeout(location.reload(), 5000);
       }
     } else {
       result.textContent = "Défaite";
       result.style = "box-shadow: 0px 0px 34px 7px rgba(255,46,46,0.48)";
-      setTimeout(console.log("délai"), 5000);
+      //setTimeout(window.location.reload(), 5000);
     }
   });
 });
