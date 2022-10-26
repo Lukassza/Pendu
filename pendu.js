@@ -14,7 +14,7 @@ let listemot = [
   "github",
   "code",
 ];
-let tentativesrestantes = 8;
+let tentativesrestantes = 7;
 let lettresentrées = [];
 let dejalettre = document.querySelector(".lettresentrées");
 let resultat = 0;
@@ -62,6 +62,11 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
+function recharger(){
+  location.reload()
+}
+
+
 jouer.addEventListener("click", function (e) {
   e.preventDefault();
   jouer.remove();
@@ -88,14 +93,16 @@ jouer.addEventListener("click", function (e) {
   let alea = getRandomInt(listemot.length);
   let motsecret = listemot[alea];
   console.log(motsecret);
+  
 //Affiche le mot en "_" pour indiquer à l'utilisateur le nombre de lettres//
   for (j = 0; j < motsecret.length; j++) {
     placemot.push("_ ");
     mot.textContent = placemot.join("");
   }
+  
 //Récupére l'attribut name du label de la checkbox cochée et le compare au mot à trouver//
-  proposition.addEventListener("click", function (evt) {
-    if (tentativesrestantes > 0) {
+  proposition.addEventListener("change", function (evt) {
+    if (tentativesrestantes > 1) {
       tentativesrestantes--;
       let elem = evt.target;
       let propal = elem.name;
@@ -123,12 +130,14 @@ jouer.addEventListener("click", function (e) {
       if (placemot.join("") == motsecret) {
         result2.textContent = "Victoire";
         result2.style = "box-shadow: 0px 0px 34px 7px rgba(67, 46, 255, 0.48)";
-        //setTimeout(location.reload(), 5000);
+        setTimeout(recharger, 5000);
+        
       }
     } else {
       result.textContent = "Défaite";
       result.style = "box-shadow: 0px 0px 34px 7px rgba(255,46,46,0.48)";
-      //setTimeout(window.location.reload(), 5000);
+      setTimeout(recharger, 5000);
+      
     }
   });
 });

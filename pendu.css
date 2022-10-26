@@ -43,7 +43,7 @@ h1 {
   border-color: rgb(11, 2, 138);
   border-width: 40px;
   font-weight: bold;
-  box-shadow: 0px 0px 300px 35px rgba(8, 116, 204, 0.8)
+  box-shadow: 0px 0px 300px 35px rgba(8, 116, 204, 0.75)
 }
 
 .proposition {
