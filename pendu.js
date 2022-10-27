@@ -135,6 +135,7 @@ jouer.addEventListener("click", function (e) {
       }
     } else {
       result.textContent = "Défaite";
+      tentative.textContent="Nombre de tentatives restantes: 0"
       result.style = "box-shadow: 0px 0px 34px 7px rgba(255,46,46,0.48)";
       setTimeout(recharger, 5000);
       
